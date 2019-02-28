@@ -1,0 +1,36 @@
+.item{
+    display: flex;
+    
+}
+.imga{
+  width:60px;
+  height:60px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.label{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.information{
+    margin-left: 10px;
+    font-size:15px;
+    padding:0;
+    transition: all .5s;
+    
+}
+.information:hover{
+  color: orangered;
+  cursor: pointer;
+  font-size: 16px;
+}
+.information p{
+    margin-bottom: 15px;
+}
+.chat{
+  margin:5px;
+  margin-left:20px;
+  height:70px;
+  width:70%;
+  color: olivedrab;
+}
