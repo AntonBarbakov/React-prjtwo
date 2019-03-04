@@ -7,6 +7,7 @@ import Dialogs from './components/Dialogs/Dialogs';
 import News from './components/News/News';
 import Music from './components/Music/Music';
 import Setting from './components/Setting/Setting';
+import Calculator from './components/Calculator/Calculator'
 import {BrowserRouter, Route} from 'react-router-dom';
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route path="/News" component={News} />
             <Route path="/Music" component={Music} />
             <Route path="/Setting" component={Setting} />
+            <Route path="/Calculator" component={Calculator} />
           </div>
         </div>
       </BrowserRouter>  
