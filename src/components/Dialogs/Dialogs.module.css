@@ -1,0 +1,22 @@
+.dialogPage{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.autors{
+    margin-left:10px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.autor a{
+    text-decoration: none;
+    color: black;
+}
+.dialog{
+    margin-top: 10px;
+
+}
+
+.active{
+    color: gold;
+}

@@ -19,10 +19,10 @@ const Panel = (props) => {
          <button value="8" >8</button>
          <button value="9" >9</button>
          <button value="0" >0</button>
-         </div>
-          <button onClick={props.funcE} >=</button>
-          <button onClick={props.funcC}>AC</button>
-      
+      </div>
+      <button onClick={props.funcE} >=</button>
+      <button onClick={props.funcC}>AC</button>
+
    </div>
    );
 }

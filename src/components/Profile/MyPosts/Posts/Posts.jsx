@@ -17,7 +17,7 @@ const Post = (props) => {
                 className={stylePosts.imga}></img>
             <div className={stylePosts.information}>
                 <p> Name : {props.name}<br />
-                    Age : {props.age}   Likes :<span><span id={props.id}></span></span></p>
+                    Age : {props.age}   Likes :<span id={props.id}></span></p>
                 <button onClick={likeCount}>Like</button>
             </div>
             <div className={stylePosts.chat}>
