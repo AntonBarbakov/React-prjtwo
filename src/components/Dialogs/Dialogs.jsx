@@ -10,7 +10,7 @@ const DialogItem = (props) => {
 
 
 const UserDialog = (props) => {
-  return <div className={styleDialogs.dialogPart}>{props.message}</div>
+  return <div className={styleDialogs.dialogPart}>{props.message }</div>
 }
 
 
@@ -32,7 +32,7 @@ const Dialogs = (props) => {
 
     let dialogElements = dialogsData.map((elem)=><DialogItem name = {elem.name}  id = {elem.id} />);
     
-    let messageElements = messageData.map((elem)=><UserDialog message = {elem.message} id = {elem.id}/>);
+    let messageElements = messageData.map((elem)=><UserDialog message = {elem.message + ' ' + props.prp} id = {elem.id}/>);
 
     return (
         <div className={styleDialogs.dialogPage}>

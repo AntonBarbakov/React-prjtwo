@@ -10,8 +10,7 @@ import Setting from './components/Setting/Setting';
 import Calculator from './components/Calculator/Calculator'
 import {BrowserRouter, Route} from 'react-router-dom';
 
-class App extends Component {
-  render() {
+const App = (props)=> { 
     return (
       <BrowserRouter>
         <div className="app-wrapper">
@@ -19,7 +18,7 @@ class App extends Component {
           <Navbar />
 
           <div className='content'>
-            <Route path="/Dialogs" component={Dialogs} />
+    <Route path="/Dialogs" render ={ () =><Dialogs prp = {props.prr}/> }/>
             <Route path="/Profile" component={Profile} />
             <Route path="/News" component={News} />
             <Route path="/Music" component={Music} />
@@ -30,6 +29,7 @@ class App extends Component {
       </BrowserRouter>  
     );
   }
-}
+
+
 
 export default App;
